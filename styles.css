@@ -17,3 +17,45 @@ input, select, button {
   padding: 8px;
   margin-right: 8px;
 }
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,.15);
+  margin: 18px 0;
+}
+
+.matchRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #2563eb;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.smallBtn {
+  padding: 6px 10px;
+  font-size: 12px;
+  margin-left: 10px;
+  background: #22c55e;
+}
