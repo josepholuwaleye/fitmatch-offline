@@ -1,12 +1,3 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FitMatch</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
 <body>
 
   <h1>🏋️ FitMatch</h1>
@@ -20,12 +11,38 @@
       <option value="coach">Coach</option>
     </select>
 
+    <select id="goal" required>
+      <option value="weight_loss">Weight loss</option>
+      <option value="muscle_gain">Muscle gain</option>
+      <option value="endurance">Endurance</option>
+      <option value="mobility">Mobility</option>
+      <option value="general">General fitness</option>
+    </select>
+
     <button type="submit">Save Profile</button>
   </form>
+
+  <hr />
 
   <h2>Profiles</h2>
   <ul id="list"></ul>
 
+  <hr />
+
+  <h2>Matching</h2>
+  <div class="matchRow">
+    <label for="clientPick">Choose a client:</label>
+    <select id="clientPick"></select>
+    <button id="matchBtn" type="button">Find Coach Matches</button>
+  </div>
+
+  <h3>Best Coach Matches</h3>
+  <ul id="matches"></ul>
+
+  <hr />
+
+  <h2>Pairings</h2>
+  <ul id="pairings"></ul>
+
   <script src="app.js"></script>
 </body>
-</html>
